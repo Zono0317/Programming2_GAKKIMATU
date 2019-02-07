@@ -45,6 +45,7 @@ int load(void) {
 	while (fscanf(fp, "%s", str) > 0) {
 		add(str);
 	}
+	fclose(fp);
 }
 
 void display(void) {
@@ -60,3 +61,7 @@ int main() {
 	display();
 	return 0;
 }
+
+/*
+input.txtに文字列入れてるので実行時にinput.txtと入力
+*/
